@@ -1,0 +1,19 @@
+<h2 style="margin: 50px 0 30px 0; font-weight: 700; font-size: 20px; line-height: 25px;">Схожі публікації</h2>
+
+<div style="display: grid; grid-template: repeat(1, 1fr) / repeat(2, 1fr); gap: 30px; ">
+  <mat-card *ngFor="let post of publikation | slice:2 : 4">
+    <mat-card-content style="display: flex; padding: 0; ">
+      <img mat-card-image src="{{post.image}}">
+      <div>
+        <div style="padding: 15px 40px 20px 15px">
+          <h3 style="font-weight: 700; font-size: 16px; line-height: 20px;">{{post.title}}<img style="height: 100%;" src="{{post.image2}}"></h3>
+          <p>{{post.text}}<a href="https://t.me/c/1198781209/145">{{post.textUrl}}</a>{{post.text2}}</p>  
+        </div>
+        <div style="display: flex; justify-content: space-between; padding: 0px 15px 15px 15px; font-size: 12px; line-height: 15px;">
+          <span>{{post.data}}</span>
+          <a (click)="openPost(post)" class="more">{{post.more}} <img style="width: 5px; height: 8px; margin-left: 10px;" src="/assets/img/body/right-icon.svg"></a>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,68 @@
+<div>
+  <div class="bg-modal" *ngIf="showFirstModal" (close)="closeFirstModal()">
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;">
+      <button mat-button mat-dialog-close class="modal__close-icon" (click)="closeFirstModal()">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L11 11" stroke="#1E1E1E" stroke-linecap="round"/>
+        <path d="M11 1L1 11" stroke="#1E1E1E" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <h3>
+        <svg width="77" height="79" viewBox="0 0 77 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_329_3005)">
+                  <path d="M73.0973 0.0838928L43.1104 24.7271L48.6568 10.1875L73.0973 0.0838928Z" fill="#E2761B" stroke="#E2761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M3.87256 0.0838928L33.6185 24.9604L28.3434 10.1875L3.87256 0.0838928Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M62.3074 57.2073L54.3213 70.747L71.4095 75.9481L76.3222 57.5076L62.3074 57.2073Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.708008 57.5076L5.59035 75.9481L22.6786 70.747L14.6924 57.2073L0.708008 57.5076Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21.7142 34.3308L16.9517 42.3019L33.9186 43.1358L33.3166 22.9604L21.7142 34.3308Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M55.2556 34.3308L43.5031 22.7272L43.1104 43.1358L60.0484 42.3019L55.2556 34.3308Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.6787 70.747L32.8649 65.2439L24.0646 57.6402L22.6787 70.747Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.105 65.2439L54.3215 70.747L52.9053 57.6402L44.105 65.2439Z" fill="#E4761B" stroke="#E4761B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M54.3215 70.747L44.105 65.2439L44.9192 72.6144L44.8282 75.7149L54.3215 70.747Z" fill="#D7C1B3" stroke="#D7C1B3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.6787 70.747L32.172 75.7149L32.1113 72.6144L32.8649 65.2439L22.6787 70.747Z" fill="#D7C1B3" stroke="#D7C1B3" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M32.3219 52.7729L23.8232 50.0046L29.82 46.9695L32.3219 52.7729Z" fill="#233447" stroke="#233447" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.6475 52.7729L47.1493 46.9695L53.1764 50.0046L44.6475 52.7729Z" fill="#233447" stroke="#233447" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M22.6785 70.747L24.125 57.2073L14.6924 57.5076L22.6785 70.747Z" fill="#CD6116" stroke="#CD6116" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M52.875 57.2073L54.3215 70.747L62.3076 57.5076L52.875 57.2073Z" fill="#CD6116" stroke="#CD6116" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M60.0484 42.3019L43.1104 43.1358L44.6782 52.7729L47.18 46.9695L53.2071 50.0046L60.0484 42.3019Z" fill="#CD6116" stroke="#CD6116" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23.8233 50.0046L29.8504 46.9695L32.3219 52.7729L33.9186 43.1358L16.9517 42.3019L23.8233 50.0046Z" fill="#CD6116" stroke="#CD6116" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.9517 42.3019L24.0644 57.6402L23.8233 50.0046L16.9517 42.3019Z" fill="#E4751F" stroke="#E4751F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M53.207 50.0046L52.9053 57.6402L60.0484 42.3019L53.207 50.0046Z" fill="#E4751F" stroke="#E4751F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M33.9184 43.1357L32.3218 52.7729L34.3111 64.1432L34.7629 49.1707L33.9184 43.1357Z" fill="#E4751F" stroke="#E4751F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M43.1101 43.1357L42.2974 49.1372L42.6582 64.1432L44.6779 52.7729L43.1101 43.1357Z" fill="#E4751F" stroke="#E4751F" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.6779 52.7729L42.6582 64.1432L44.1047 65.2439L52.9051 57.6402L53.2068 50.0046L44.6779 52.7729Z" fill="#F6851B" stroke="#F6851B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M23.8232 50.0046L24.0643 57.6402L32.8647 65.2439L34.3112 64.1432L32.3219 52.7729L23.8232 50.0046Z" fill="#F6851B" stroke="#F6851B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.8282 75.7149L44.9191 72.6144L44.1656 71.8795H32.8043L32.1113 72.6144L32.172 75.7149L22.6787 70.747L25.9932 73.7469L32.7133 78.9161H44.2565L51.0069 73.7469L54.3214 70.747L44.8282 75.7149Z" fill="#C0AD9E" stroke="#C0AD9E" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M44.1049 65.2439L42.6584 64.1432H34.3114L32.8649 65.2439L32.1113 72.6144L32.8043 71.8795H44.1656L44.9191 72.6144L44.1049 65.2439Z" fill="#161616" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M74.3634 26.3277L76.9243 12.7226L73.0973 0.0838928L44.105 23.8933L55.2555 34.3308L71.017 39.4329L74.5135 34.9314L73.0063 33.7318L75.4172 31.2973L73.5491 29.6967L75.96 27.6616L74.3634 26.3277Z" fill="#763D16" stroke="#763D16" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M0.0756836 12.7226L2.63664 26.3277L1.0097 27.6616L3.42054 29.6967L1.58284 31.2973L3.99369 33.7318L2.48653 34.9314L5.95269 39.4329L21.7142 34.3308L32.8647 23.8933L3.87239 0.0838928L0.0756836 12.7226Z" fill="#763D16" stroke="#763D16" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M71.0169 39.4329L55.2555 34.3307L60.0484 42.3019L52.9053 57.6402L62.3076 57.5076H76.3223L71.0169 39.4329Z" fill="#F6851B" stroke="#F6851B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M21.7142 34.3307L5.95274 39.4329L0.708008 57.5076H14.6924L24.0644 57.6402L16.9517 42.3019L21.7142 34.3307Z" fill="#F6851B" stroke="#F6851B" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M43.1101 43.1358L44.1047 23.8933L48.6869 10.1875H28.3433L32.8647 23.8933L33.9185 43.1358L34.2809 49.2043L34.3112 64.1433H42.6582L42.7189 49.2043L43.1101 43.1358Z" fill="#F6851B" stroke="#F6851B" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_329_3005">
+                  <rect width="77" height="79" fill="white"/>
+                  </clipPath>
+                  </defs>
+        </svg>
+      </h3>
+      <button class="modal__button" (click)="openSecondModal()">Авторизуватися через MetaMask</button>
+    </div> 
+  </div>
+  
+  <div *ngIf="showSecondModal" (close)="closeSecondModal()">
+    <div style="display: flex; align-items: center; justify-content: center; flex-direction: column;" class="bg-modal">
+      <button class="modal__close-icon" (click)="closeSecondModal()">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L11 11" stroke="#1E1E1E" stroke-linecap="round"/>
+          <path d="M11 1L1 11" stroke="#1E1E1E" stroke-linecap="round"/>
+        </svg>
+      </button>
+      <h2>Повідомлення</h2>
+      <h3 style="margin-top: 30px;">Встановіть MetaMask.</h3>
+      <button class="modal__button" (click)="closeSecondModal()">Закрити</button>
+    </div>
+  </div>
+</div>
+

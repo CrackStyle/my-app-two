@@ -1,0 +1,19 @@
+<div style="display: flex; justify-content: space-between; align-items: center;">
+  <h3 style="font-size: 14px; font-weight: 400; line-height: 18px;">Вигляд:</h3>
+  <ul class="icon">
+    <button (click)="changeTagList('list')">
+
+      <img *ngIf="changeList" style="padding: 7px 15px 7px 15px;" src="/assets/img/list-icon.svg">
+      <img *ngIf="changeTable" style="background: #1E1E1E; padding: 7px 15px 7px 15px; border-radius: 6px;" src="/assets/img/list-icon-black.svg">
+    </button>
+
+    <button (click)="changeTagTable('/')">
+      <img *ngIf="changeList" style="background: #1E1E1E; padding: 7px 15px 7px 17px; border-radius: 6px;" src="/assets/img/grid-icon.svg">
+      <img *ngIf="changeTable" style="padding: 7px 15px 7px 17px; border-radius: 6px;" src="/assets/img/grid-icon-black.svg">
+
+    </button>
+  </ul>
+</div>
+
+
+

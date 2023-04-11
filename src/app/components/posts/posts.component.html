@@ -1,0 +1,44 @@
+<section style="background: #F8F8F8; padding: 50px 84px 50px 84px;">
+  <div>
+    <div style="display: flex; justify-content: space-between;">
+      <button (click)="slidePrev()">< Назад</button>
+      <button (click)="slideNext()">Наступний пост ></button>
+    </div>
+    <swiper #swiper
+      [slidesPerView]="'auto'"
+      [spaceBetween]="12"
+      (slideChange)="onSlideChange()"
+    >
+      <ng-template swiperSlide><app-post-one></app-post-one></ng-template>
+
+      <ng-template swiperSlide><app-post-two></app-post-two></ng-template>
+
+      <ng-template swiperSlide>Slide 3</ng-template>
+      
+      <ng-template swiperSlide>Slide 4</ng-template>
+      
+      <ng-template swiperSlide>Slide 5</ng-template>
+      
+      <ng-template swiperSlide>Slide 6</ng-template>
+      
+      <ng-template swiperSlide>Slide 7</ng-template>
+      
+      <ng-template swiperSlide>Slide 8</ng-template>
+      
+      <ng-template swiperSlide>Slide 9</ng-template>
+      
+      <ng-template swiperSlide>Slide 10</ng-template>
+      
+      <ng-template swiperSlide>Slide 11</ng-template>
+      
+      <ng-template swiperSlide>Slide 12</ng-template>
+      
+    </swiper>
+
+  </div>
+
+  <h2>Популярні питання за темою:</h2>
+  <app-question *ngFor="let quest of questing" [quest]="quest"></app-question>
+  <app-table-post></app-table-post>
+
+</section>

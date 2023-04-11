@@ -1,0 +1,44 @@
+mat-card {
+  width: 585px;
+  height: 235px;
+  border-radius: 12px;
+  box-shadow: none;
+}
+img {
+  height: 235px;
+  border-radius: 12px;
+}
+p {  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;  
+  -webkit-line-clamp: 6;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 10px;
+}
+span {
+  font-weight: 400;
+  color: #9D9D9D;
+}
+a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1E1E1E;
+}
+.more {
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 15px;
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
+  background: none;
+  color: #1E1E1E;
+}
+.my-pagination ::ng-deep .ngx-pagination a, .ngx-pagination button {
+  color: #9D9D9D;
+}

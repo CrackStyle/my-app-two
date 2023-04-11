@@ -1,0 +1,15 @@
+<section style=" background: #F8F8F8; padding: 50px 84px 50px 84px;">
+  <app-base></app-base>
+
+  <div style="display: grid; grid-template: repeat(3, 1fr) / repeat(2, 1fr); gap: 30px;">
+  
+    <app-table-pages1
+    *ngFor="let post of publikation | search: searchText | paginate: {itemsPerPage: 6, currentPage: p}" [post]="post">
+    </app-table-pages1>
+  </div>
+
+  <div style="display: flex; justify-content: end; margin-top: 20px;">
+    <pagination-controls class="my-pagination" (pageChange)="p = $event" previousLabel="" nextLabel=""></pagination-controls>
+  </div>
+
+</section>

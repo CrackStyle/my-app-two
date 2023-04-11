@@ -1,0 +1,18 @@
+input {
+  position: absolute;
+  top: 96px;
+  left: 0;
+  width: 1368px;
+  height: 70px;
+  padding: 26px 84px;
+  background: #FFFFFF;
+  border: none;
+  z-index: 101;
+}
+.my-pagination ::ng-deep .ngx-pagination .current {
+  background: none;
+  color: #1E1E1E;
+}
+.my-pagination ::ng-deep .ngx-pagination a, .ngx-pagination button {
+  color: #9D9D9D;
+}

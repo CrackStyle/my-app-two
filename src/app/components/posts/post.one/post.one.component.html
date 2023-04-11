@@ -1,0 +1,86 @@
+<div *ngIf="posts">
+  <section style="margin-top: 30px; background: #FFFFFF; box-shadow: 0px 0px 20px rgba(74, 74, 74, 0.07); border-radius: 12px; padding: 30px;">
+    
+    <div style="display: flex; justify-content: space-between; color: #9D9D9D; font-size: 14px; ">
+      <div style="display: flex; align-items: center;">
+        <a routerLink="/" style="text-decoration: none; color: #9D9D9D; font-weight: 400;">Головна</a>
+        <span style="margin: 0 10px;"> > </span>
+        <span>Пост {{posts.postid}}</span>
+      </div>
+      <div style="display: flex;">
+        <span>18 листопада, 2022</span>
+        <img src="assets/img/eye-icon.svg" style="margin: 0 5px 0 20px;">
+        <span>1000</span>
+      </div>
+    </div>
+  
+    <h2>{{posts.titlepost}}</h2>
+    <p>{{posts.texttitle}}</p>
+  
+    <h3>{{posts.subtitle1}}</h3>
+    <ul>
+      <li class="liststyle">
+        <img src="{{posts.imagetitle1}}"><a class="list" href="">{{posts.listtitle1}}</a>
+      </li>
+      <li class="liststyle">
+        <img src="{{posts.imagetitle1}}"><a class="list" href="">{{posts.listtitle2}}</a>
+      </li>
+      <li class="liststyle">
+        <img src="{{posts.imagetitle1}}"><a class="list" href="">{{posts.listtitle3}}</a>
+      </li>
+    </ul>
+    <p>{{posts.text1title1}}</p>
+    <p>{{posts.text1title2}}</p>
+    <p>{{posts.text1title3}}</p>
+  
+    <h3><img style="margin-right: 10px;" src="{{posts.imagesvg}}">{{posts.subtitle2}}</h3>
+    <p><a href="https://coinmarketcap.com/currencies/trust-wallet-token/">{{posts.text2title1Url}}</a>{{posts.text2title1}}</p>
+    <p>{{posts.text2title2}} <a href="https://trustwallet.com/ru/">{{posts.text2title2Url}}</a> {{posts.text2title3}}</p>
+    <div class="imgstyle">
+      <img src="{{posts.imagetitle2}}">
+      <p class="textstyle">{{posts.text2title4}} <a class="textstyle" href="https://trustwallet.com/ru/">{{posts.text2title3Url}}</a></p>
+    </div>
+    <p>{{posts.text2title5}} <a href="https://telegra.ph/Trust-Wallet---yak-nalashtuvati-ta-vikoristovuvati-gamanec-08-21-2">{{posts.text2title4Url}}</a>{{posts.text2title6}}</p>
+  
+      <h3><img style="margin-right: 10px;" src="{{posts.imagesvg}}">{{posts.subtitle3}}</h3>
+      <p><a href="https://coinmarketcap.com/currencies/toncoin/markets/">{{posts.text3title1Url}}</a>{{posts.text3title1}}</p>
+      <p>{{posts.text3title2}} <a href="https://trustwallet.com/ru/">{{posts.text3title2Url}}</a>{{posts.text3title3}}</p>
+  
+    <ul><li class="stylelist">{{posts.list1title3}}</li></ul>
+    <ul><li class="stylelist">{{posts.list2title3}}</li></ul>
+    <ul><li class="stylelist">{{posts.list3title3}}</li></ul>
+    <div class="imgstyle">
+      <img src="{{posts.imagetitle3}}">
+      <p class="textstyle">{{posts.text3title4}} <a class="textstyle" href="https://www.huobi.com/ru-ru/">{{posts.text3title5}}</a></p>
+    </div>
+    <p>{{posts.text3title6}}</p>
+  
+    <h3 class="prumitka">{{posts.subtitle4}}</h3>
+    <p style="display: flex; font-style: italic;">
+      <img style="margin-right: 10px;" src="{{posts.imagesvg}}">
+      {{posts.texttitle4}}
+    </p>
+    <h3><img style="margin-right: 10px;" src="{{posts.imagesvg}}">{{posts.subtitle5}}</h3>
+    <p><a href="https://coinmarketcap.com/currencies/toncoin/markets/">{{posts.text5title1Url}}</a>{{posts.text5title1}}</p>
+    <h4>{{posts.text5title2}}</h4>
+    <p>{{posts.text5title3}}</p>
+    <p>{{posts.text5title4}}<a href="https://qmall.io/">{{posts.text5title2Url}}</a></p>
+    <div class="imgstyle">
+      <img src="{{posts.imagetitle5}}">
+      <p class="textstyle">{{posts.text5title5}} <a class="textstyle" href="https://qmall.io/">{{posts.text5title6}}</a></p>
+    </div>
+    <p>{{posts.text5title7}}</p>
+  
+    <h3 class="prumitka">{{posts.subtitle4}}</h3>
+    <p style="display: flex; font-style: italic;">
+      <img style="margin-right: 10px;" src="{{posts.imagesvg}}">
+      {{posts.texttitle5}}
+    </p>
+    <p style="font-weight: 400; font-size: 14px; line-height: 18px; color: #9D9D9D; margin: 20px 0 0 0;">
+      {{posts.textsearch}}
+    </p>
+  
+  </section>
+
+</div>
+

@@ -1,0 +1,36 @@
+<section style="
+margin-top: 20px; 
+background: #FFFFFF; 
+box-shadow: 0px 0px 20px rgba(74, 74, 74, 0.07); 
+border-radius: 12px; 
+padding: 23px 30px;">
+  <div class="title" (click)="openquest = !openquest" >
+    <h3>{{quest.Name}}</h3>
+    <div>
+      <svg *ngIf="!openquest" class="plus" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="11.1094" width="2.77778" height="25" rx="1.38889" fill="#389FFB"/>
+        <rect y="13.8896" width="2.77778" height="25" rx="1.38889" transform="rotate(-90 0 13.8896)" fill="#389FFB"/>
+      </svg>
+      
+      <svg *ngIf="openquest" class="minus" width="25" height="3" viewBox="0 0 25 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect y="2.88916" width="2.77778" height="25" rx="1.38889" transform="rotate(-90 0 2.88916)" fill="#389FFB"/>
+      </svg>
+    </div>
+  </div>
+  <div *ngIf="openquest">
+    <p>{{quest.parag1}}</p>
+    <h4>{{quest.parag2}}</h4>
+    <ul>
+      <li>- <a href="https://www.binance.com/uk-UA">{{quest.parag3_1}}</a><span>{{quest.parag3_2}}</span></li>
+      <li>- <a href="https://www.binance.com/uk-UA">{{quest.parag4_1}}</a><span>{{quest.parag4_2}}</span></li>
+    </ul>
+    <h4>{{quest.parag5}}</h4>
+    <ul>
+      <li>- <a href="">{{quest.parag6_1}}</a><span>{{quest.parag6_2}}</span></li>
+      <li>- <a href="">{{quest.parag7_1}}</a><span>{{quest.parag7_2}}</span></li>
+    </ul>
+    <p style="font-style: italic;">{{quest.parag8_1}} <a href="">{{quest.parag8_2}}</a></p>
+  </div>
+</section>
+
+

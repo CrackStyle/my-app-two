@@ -1,0 +1,76 @@
+h2 {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 31px;
+  margin: 20px 0;
+}
+h3 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  margin:30px 0 20px 0;
+}
+a {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #389FFB;
+  font-family: "Merriweather"
+}
+p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.liststyle{
+  margin-top: 20px;
+}
+.liststyle:last-child{
+  margin-bottom: 30px;
+}
+.list {
+  margin-left: 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #389FFB;
+}
+.imgstyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.imgstyle img {
+  margin: 30px 0 10px 0;
+}
+.imgstyle p {
+  margin-bottom: 20px;
+}
+.stylelist {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+h4 {
+  margin: 13px 0 10px 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+}
+.prumitka {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  color: #389FFB; 
+}
+.textstyle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9D9D9D;
+}
